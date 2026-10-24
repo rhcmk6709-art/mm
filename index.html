@@ -1,0 +1,1219 @@
+<!DOCTYPE html><html class="light" lang="ko"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ATELIER CRAFT - DIY 키트 직접 주문 &amp; 커스텀 빌더</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Playfair+Display:ital@0;1&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration Verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-fixed-variant": "#3b4b35",
+            "on-primary-fixed-variant": "#793018",
+            "on-secondary": "#ffffff",
+            "secondary": "#53634b",
+            "primary-fixed": "#ffdbd0",
+            "surface-dim": "#e3d8d3",
+            "secondary-fixed": "#d6e8ca",
+            "on-tertiary-fixed-variant": "#653e0f",
+            "on-tertiary-container": "#ffead8",
+            "error-container": "#ffdad6",
+            "inverse-on-surface": "#faeee9",
+            "surface-container-high": "#f2e6e1",
+            "on-surface-variant": "#55433d",
+            "on-secondary-container": "#57674f",
+            "surface-container-low": "#fdf1ec",
+            "on-tertiary-fixed": "#2c1600",
+            "on-primary-fixed": "#3a0b00",
+            "secondary-container": "#d3e5c8",
+            "tertiary-fixed": "#ffdcbd",
+            "kraft-accent": "#D8A26A",
+            "sage-soft": "#E4EAE1",
+            "secondary-fixed-dim": "#baccaf",
+            "primary": "#893c23",
+            "on-primary-container": "#ffe9e3",
+            "on-tertiary": "#ffffff",
+            "outline": "#88726c",
+            "surface-container-lowest": "#ffffff",
+            "surface-container": "#f8ebe6",
+            "primary-container": "#a85338",
+            "surface": "#fff8f5",
+            "tertiary-fixed-dim": "#f5bc81",
+            "surface-variant": "#ece0db",
+            "outline-variant": "#dbc1ba",
+            "paper-surface": "#F4EFE6",
+            "on-error-container": "#93000a",
+            "error": "#ba1a1a",
+            "terracotta-soft": "#F7ECE8",
+            "surface-tint": "#98462c",
+            "on-surface": "#201a18",
+            "on-primary": "#ffffff",
+            "paper-base": "#FAF6F0",
+            "inverse-primary": "#ffb59e",
+            "on-secondary-fixed": "#111f0d",
+            "surface-container-highest": "#ece0db",
+            "surface-bright": "#fff8f5",
+            "on-background": "#201a18",
+            "primary-fixed-dim": "#ffb59e",
+            "background": "#fff8f5",
+            "on-error": "#ffffff",
+            "tertiary": "#734a1a",
+            "tertiary-container": "#8f6230",
+            "inverse-surface": "#352f2c"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "margin-tablet": "2rem",
+            "gutter-mobile": "1rem",
+            "margin": "3rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "margin-mobile": "1rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Epilogue"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-md": ["Epilogue"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Epilogue"],
+            "headline-xl-mobile": ["Epilogue"],
+            "headline-xl": ["Epilogue"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "headline-lg": ["Epilogue"]
+          },
+          "fontSize": {
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-xl": ["44px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "42px", "letterSpacing": "-0.015em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-paper-base text-on-surface antialiased font-body-md text-body-md selection:bg-primary-fixed selection:text-primary">
+<!-- ==========================================
+       SHARED COMPONENT 1: TopNavBar
+       Active Tab: 커스텀 빌더 (Mapped to Customizer Studio)
+       ========================================== -->
+<header class="bg-paper-base/95 backdrop-blur-md dark:bg-inverse-surface/95 docked full-width top-0 sticky z-50 shadow-[0_2px_12px_-2px_rgba(70,52,44,0.04)] dark:shadow-none border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-6 lg:px-12 max-w-7xl mx-auto h-20">
+<!-- Brand Logo Anchor -->
+<div class="flex items-center gap-8">
+<a class="text-headline-md font-headline-md font-bold tracking-tight text-primary dark:text-inverse-primary flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-primary" data-icon="brush">brush</span>
+          ATELIER CRAFT
+        </a>
+<!-- Desktop Navigation Links (From Shared Components JSON) -->
+<nav class="hidden md:flex items-center gap-8 pl-4">
+<a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" href="#kit-catalog">키트 탐색</a>
+<a class="text-primary dark:text-primary-fixed border-b-2 border-primary font-label-md text-label-md pb-1" href="#custom-studio">커스텀 빌더</a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" href="#workshop-guide">워크숍 가이드</a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" href="#brand-story">브랜드 스토리</a>
+</nav>
+</div>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-4">
+<!-- Search bar subtle trigger -->
+<div class="hidden lg:flex items-center bg-paper-surface border border-outline-variant/40 rounded-lg px-3 py-1.5 text-on-surface-variant text-body-sm gap-2 w-52">
+<span class="material-symbols-outlined text-outline" data-icon="search">search</span>
+<span class="text-outline">키트 및 부자재 검색</span>
+</div>
+<a class="p-2 text-on-surface-variant hover:text-primary transition-colors duration-150 rounded-full" href="#favorites" title="위시리스트">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</a>
+<a class="relative p-2 text-on-surface-variant hover:text-primary transition-colors duration-150 rounded-full" href="#cart" title="장바구니" onclick="event.preventDefault(); openCheckoutDrawer();">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute top-1 right-1 w-4 h-4 bg-primary text-on-primary rounded-full text-[10px] font-bold flex items-center justify-center">1</span>
+</a>
+<div class="hidden sm:flex items-center gap-2 border-l border-outline-variant/40 pl-4 ml-1">
+<button class="px-3.5 py-1.5 text-body-sm font-label-md text-on-surface-variant hover:text-primary transition-colors">
+            주문조회
+          </button>
+<a class="bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-4 py-2 rounded-lg active:scale-[0.98] transition-transform duration-150 shadow-sm flex items-center gap-1.5" href="#custom-studio">
+<span class="">시작하기</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full">
+<!-- ==========================================
+         HERO SECTION: Naver Booking to Online Custom Order Migration
+         ========================================== -->
+<section class="relative overflow-hidden bg-surface-container-low border-b border-outline-variant/30 py-12 lg:py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2.5 px-3 py-1 rounded-full bg-secondary-container/60 border border-secondary/20 text-on-secondary-fixed-variant text-label-md">
+<span class="material-symbols-outlined text-[16px]" data-icon="handshake">handshake</span>
+<span class="">네이버 예약 시스템에서 더욱 정교해진 온라인 자체 커스텀 스튜디오로 전환</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl font-bold tracking-tight text-on-surface leading-tight">
+            나만의 손길로 완성하는<br>
+<span class="text-primary font-serif italic">아늑한 취미 생활</span> —<br>
+            DIY 키트 직접 주문 &amp; 커스텀
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            공방 방문 없이도 집에서 완벽한 가죽공예, 도예 인센스, 천연 소이 캔들을 경험하세요. 원하는 이니셜 각인부터 부자재 마감까지 360° 실시간 미리보기로 나만의 에디션을 디자인합니다.
+          </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg px-6 py-3.5 rounded-lg active:scale-[0.98] transition-all duration-150 shadow-sm flex items-center gap-2" href="#custom-studio">
+<span class="material-symbols-outlined" data-icon="tune">tune</span>
+<span class="">스튜디오에서 실시간 커스텀 시작</span>
+</a>
+<a class="bg-surface-container-lowest hover:bg-paper-surface border border-outline-variant/60 text-on-surface font-label-lg text-label-lg px-5 py-3.5 rounded-lg transition-colors flex items-center gap-2" href="#kit-catalog">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="">DIY 키트 전체보기</span>
+</a>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-3 gap-4 pt-4 border-t border-outline-variant/30">
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">100% 이탈리아 베지터블</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">인증받은 친환경 천연가죽</p>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">무료 각인 &amp; 샘플 키트</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">영문 / 한글 정밀 불도장</p>
+</div>
+<div>
+<p class="font-label-md text-label-md text-primary font-bold">24시간 내 배송 출고</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">모든 부자재 완벽 패키징</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl overflow-hidden border border-outline-variant/30 shadow-lg bg-surface-container-lowest p-2">
+<img class="w-full h-[400px] object-cover rounded-xl" data-alt="A warm, slow-living artisan workshop table bathed in soft afternoon window light. An elegant handcrafted vegetable-tanned leather wallet sits next to brass crafting tools, spools of natural linen thread, beeswax blocks, and a cup of warm tea on an unbleached linen surface. The composition uses rich terracotta, deep olive sage, and soft kraft tones to evoke mindfulness and tactile craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9ER5vt_zY6OwZ2WXdsXSwJhCxSyUhf2QxyUtLWk4cHC7BS_GrufRNk031mFcbNIJbBAb4lxepCDxK3FRLV6tnHYuaPxsUwgv6kuysetXOc_WR2risHKstINaNmWGDl7XhUwmz7bsfbowakAHxc7625F1NTwUj44f17cm88jpOsfp46Abf6Uk4HqOqM3fCtnwDtdv1ny00pzNPt9LBqMYKZZiCGJ9gH01k_vTVQP_Jrvq9WHKJpQ">
+<div class="absolute bottom-6 left-6 right-6 bg-surface-container-lowest/95 backdrop-blur-md border border-outline-variant/30 rounded-xl p-4 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-terracotta-soft text-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-label-lg font-bold text-on-surface">클래식 가죽 카드지갑 DIY</h4>
+<p class="font-body-sm text-body-sm text-secondary">누적 평점 4.98 (리뷰 3,420개)</p>
+</div>
+</div>
+<span class="text-primary font-headline-sm font-bold text-headline-sm">₩42,000</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+         SECTION 1: DIY KIT CATALOG (구현 기능 1)
+         ========================================== -->
+<section class="py-16 lg:py-24 max-w-7xl mx-auto px-6 lg:px-12" id="kit-catalog">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-[16px]" data-icon="category">category</span>
+<span class="">Artisanal Craft Collection</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">
+            공방 마스터가 큐레이션한 DIY 키트 컬렉션
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            시작부터 마감까지 헤매지 않도록 단계별 4K 영상 가이드와 실측 도면이 함께 동봉됩니다.
+          </p>
+</div>
+<!-- Category Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none">
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md bg-primary text-on-primary transition-all whitespace-nowrap shadow-sm">
+            전체 키트
+          </button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md bg-paper-surface hover:bg-surface-container border border-outline-variant/30 text-on-surface-variant transition-colors whitespace-nowrap">
+            가죽 소품 (Leather)
+          </button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md bg-paper-surface hover:bg-surface-container border border-outline-variant/30 text-on-surface-variant transition-colors whitespace-nowrap">
+            도예 &amp; 인센스 트레이 (Clay)
+          </button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md bg-paper-surface hover:bg-surface-container border border-outline-variant/30 text-on-surface-variant transition-colors whitespace-nowrap">
+            감성 캔들 &amp; 디퓨저
+          </button>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md bg-paper-surface hover:bg-surface-container border border-outline-variant/30 text-on-surface-variant transition-colors whitespace-nowrap">
+            우드 카빙 코스터
+          </button>
+</div>
+</div>
+<!-- Kit Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Kit Card 1 (Active Featured in Custom Studio) -->
+<article class="group bg-surface-container-lowest rounded-xl border-2 border-primary overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative overflow-hidden aspect-[4/3] bg-paper-surface">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A minimalist vegetable-tanned leather cardholder crafted in natural tan with fine saddle stitching and engraved initials. It rests on a clean Japanese paper surface next to brass hardware screws and needles under clean, warm daylight. The overall mood is grounded, organic, and meticulously crafted." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXDDnEtqWMAEgt8dhZWmaBJCjaT8N8Dyz1NJsBLavZN6pr6BYpZZJ1grkdGf87CqYNWmAGPYpfwBsCuZGUrhAVkE3pusKBk6fa5gOIrV2HIB3w2K2WNZufriObM36wvUgT_78zmP4ia6YgV_SO8g6Xu712aCEU4AE8xWtUYhG9v4aWL2TTeHBxgRDjw5Ok1wctapHHAPknqoOu4JDshiQXWk0d7GRp3eX__knHiUQwlP_-Y_lJNg">
+<div class="absolute top-3 left-3 flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded-full text-label-sm font-label-sm text-primary font-bold border border-outline-variant/20">
+                입문자 추천
+              </span>
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded-full text-label-sm font-label-sm text-secondary font-bold border border-outline-variant/20 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" data-icon="schedule">schedule</span>
+                1.5시간 소요
+              </span>
+</div>
+<div class="absolute top-3 right-3">
+<span class="px-2 py-1 bg-primary text-on-primary text-label-sm font-label-sm rounded font-bold">
+                커스텀 지원
+              </span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant mb-1">
+<span class="">가죽공예 시리즈 No.01</span>
+<span class="flex items-center text-primary font-bold text-label-sm">
+<span class="material-symbols-outlined text-[15px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+                  4.9 (842)
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">
+                미니멀 베지터블 레더 카드 포켓 키트
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                재단된 이탈리아산 천연 푸에블로 가죽 원단, 프랑스 린카블레 린넨사 2종, 황동 스냅 단추 및 마감용 슬리커 완벽 동봉.
+              </p>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-4 pt-3 border-t border-outline-variant/20">
+<span class="text-headline-sm font-headline-sm font-bold text-primary">₩42,000</span>
+<span class="text-body-sm text-outline line-through">₩48,000</span>
+<span class="text-label-sm font-bold text-secondary">12% OFF</span>
+</div>
+<a class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md py-3 rounded-lg flex items-center justify-center gap-2 active:scale-[0.98] transition-transform" href="#custom-studio">
+<span class="material-symbols-outlined text-[18px]" data-icon="palette">palette</span>
+<span class="">이 키트 커스텀하기</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Kit Card 2 -->
+<article class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative overflow-hidden aspect-[4/3] bg-paper-surface">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A handmade ceramic incense tray with organic wabi-sabi undulating edges, sitting on a natural wood surface next to ceramic sculpting tools, fine sandpaper, and a burning aromatic palo santo stick with subtle smoke wisps. The color palette incorporates muted earth tones, soft sage green, and tactile stoneware textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc9duD9Un8moCwVRm4VL1jjqAOecYyIlJC5Fq3hDT21R5uMIpPmMzrcFA5jHne5KSpLhRS1UoJ__gVWVdvS7S6N66xpjPlR_LYls30JVyrL6Eblc0YQ2gHCMWHvAJOM8ute5UKrDjVJaeGx7McyQg2-eUJ4dLBPdY4j90gaKDjBTw4aH2HfUPqsKo0QQOrknElIQHBvOY3cPaPoVMgJ41Z-xJBdR2CGq61j-MRsBJfUA0KkXqqng">
+<div class="absolute top-3 left-3 flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded-full text-label-sm font-label-sm text-on-surface-variant font-bold border border-outline-variant/20">
+                중급 난이도
+              </span>
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded-full text-label-sm font-label-sm text-secondary font-bold border border-outline-variant/20 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" data-icon="schedule">schedule</span>
+                2.5시간 소요
+              </span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant mb-1">
+<span class="">도예 &amp; 홈 오브제 No.04</span>
+<span class="flex items-center text-primary font-bold text-label-sm">
+<span class="material-symbols-outlined text-[15px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+                  4.8 (510)
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">
+                오가닉 스톤웨어 인센스 트레이 &amp; 홀더 키트
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                가마 없이 굳히는 고급 에어드라이 점토 1kg, 자연석 텍스처 각인 스탬프, 무광 바니시, 팔로산토 스틱 포함.
+              </p>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-4 pt-3 border-t border-outline-variant/20">
+<span class="text-headline-sm font-headline-sm font-bold text-primary">₩38,000</span>
+<span class="text-body-sm text-outline line-through">₩44,000</span>
+<span class="text-label-sm font-bold text-secondary">13% OFF</span>
+</div>
+<button class="w-full bg-paper-surface hover:bg-surface-container text-on-surface border border-outline-variant/40 font-label-md text-label-md py-3 rounded-lg flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined text-[18px]" data-icon="tune">tune</span>
+<span class="">옵션 선택 &amp; 주문</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Kit Card 3 -->
+<article class="group bg-surface-container-lowest rounded-xl border border-outline-variant/30 overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col">
+<div class="relative overflow-hidden aspect-[4/3] bg-paper-surface">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A cozy candle making workshop set with amber glass jars, poured natural golden soy wax, dried botanical lavender and eucalyptus stems, cinnamon sticks, and brass wax melting pitcher on a warm kraft paper workspace with soft morning sunbeams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChBMCptKRFNh1DfqGyD_7rDPNhVi7BQPpvSZkCyRcFvtj6JVL4c2PmzP1XbDjZhPcSI4az8KUP4NG4no9Ki88mfXSP592AytIH_6OH2prIyNCjh9xyzdXxlVFxUxoR7aBoocUt2X9v8aangKxiTjMQyUHGy9mDNCcYPSSBSmdJLua_xEExO1Fl_YZunPz10c6Sg21jfFkgh0Xa0vCRc8CCWerDkWFqc8EbO692_l3qx_m1hjZJwg">
+<div class="absolute top-3 left-3 flex flex-wrap gap-2">
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded-full text-label-sm font-label-sm text-primary font-bold border border-outline-variant/20">
+                입문자 추천
+              </span>
+<span class="px-2.5 py-1 bg-surface-container-lowest/90 backdrop-blur-sm rounded-full text-label-sm font-label-sm text-secondary font-bold border border-outline-variant/20 flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" data-icon="schedule">schedule</span>
+                1시간 소요
+              </span>
+</div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-body-sm text-on-surface-variant mb-1">
+<span class="">보태니컬 아로마 No.02</span>
+<span class="flex items-center text-primary font-bold text-label-sm">
+<span class="material-symbols-outlined text-[15px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+                  4.9 (1,120)
+                </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">
+                포레스트 우드윅 소이 캔들 &amp; 디퓨저 키트
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                미국산 골든 소이왁스 300g, 프랑스 천연 프래그런스 오일 (시더우드&amp;히노키), 타닥타닥 소리 나는 단풍나무 우드 심지.
+              </p>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-4 pt-3 border-t border-outline-variant/20">
+<span class="text-headline-sm font-headline-sm font-bold text-primary">₩35,000</span>
+<span class="text-body-sm text-outline line-through">₩39,000</span>
+<span class="text-label-sm font-bold text-secondary">10% OFF</span>
+</div>
+<button class="w-full bg-paper-surface hover:bg-surface-container text-on-surface border border-outline-variant/40 font-label-md text-label-md py-3 rounded-lg flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined text-[18px]" data-icon="tune">tune</span>
+<span class="">옵션 선택 &amp; 주문</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- ==========================================
+         SECTION 2: INTERACTIVE CUSTOM STUDIO (구현 기능 2)
+         Split Layout: Preview Stage (Left) & Configuration Cascade (Right)
+         ========================================== -->
+<section class="py-12 lg:py-20 bg-surface-container-low border-y border-outline-variant/30" id="custom-studio">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Header -->
+<div class="mb-10 text-center max-w-2xl mx-auto">
+<span class="text-primary font-label-md text-label-md uppercase tracking-wider font-bold">Interactive Customizer Studio</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">
+            실시간 인터랙티브 디자인 커스텀 스튜디오
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            소재, 스티치, 금속 부자재, 그리고 나만의 영문 각인까지 변경 사항을 실시간 렌더링 뷰어로 직접 확인하며 주문하세요.
+          </p>
+</div>
+<!-- Studio Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT: Sticky Real-time Custom Preview Stage (Col 1-5) -->
+<div class="lg:col-span-5 lg:sticky lg:top-28 space-y-4">
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 p-6 shadow-sm relative overflow-hidden">
+<!-- Preview Viewport Header & Angle Switcher -->
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-3 mb-6">
+<div>
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase">LIVE CANVAS</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">클래식 카드지갑 미리보기</h4>
+</div>
+<div class="flex items-center bg-paper-surface p-1 rounded-lg border border-outline-variant/30 text-label-sm">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-bold shadow-xs" id="angle-front" onclick="switchAngle('front')">전면부</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface" id="angle-back" onclick="switchAngle('back')">후면부</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface" id="angle-open" onclick="switchAngle('open')">내부 슬롯</button>
+</div>
+</div>
+<!-- Visual Stage Container with dynamic rendering mock -->
+<div class="relative w-full aspect-square bg-paper-surface rounded-xl flex items-center justify-center p-8 border border-outline-variant/20 overflow-hidden shadow-inner">
+<!-- Texture Lighting Gradient -->
+<div class="absolute inset-0 bg-radial from-transparent via-black/5 to-black/10 pointer-events-none"></div>
+<!-- Product SVG / Interactive Illustration Model -->
+<div class="relative w-72 h-48 transition-all duration-300 rounded-lg shadow-xl flex flex-col justify-between p-4 border" id="product-canvas" style="background-color: #C17C54; border-color: #8C4D2E;">
+<!-- Top Stitching Line -->
+<div class="w-full flex justify-between items-center px-2">
+<div class="w-full border-t border-dashed border-tertiary-fixed-dim/80" id="stitch-line-top"></div>
+</div>
+<!-- Center Logo / Card Slot Layer -->
+<div class="relative w-full h-24 rounded bg-black/10 border-t border-dashed border-white/20 p-2 flex flex-col justify-end">
+<!-- Engraved Monogram Display Realtime -->
+<div class="flex items-center justify-between">
+<span class="w-5 h-5 rounded-full bg-amber-400 border border-amber-600 shadow-md flex items-center justify-center" id="preview-hardware-snap">
+<span class="w-2 h-2 rounded-full bg-amber-700/50"></span>
+</span>
+<div class="text-right">
+<span class="font-serif italic font-bold tracking-widest text-on-primary-fixed drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)] text-[15px]" id="preview-engrave-text">
+                          ATELIER. C
+                        </span>
+<p class="text-[9px] uppercase tracking-wider text-black/50 font-bold">HANDMADE BESPOKE</p>
+</div>
+</div>
+</div>
+<!-- Bottom Stitching Line -->
+<div class="w-full flex justify-between items-center px-2">
+<div class="w-full border-b border-dashed border-tertiary-fixed-dim/80" id="stitch-line-bottom"></div>
+</div>
+</div>
+<!-- 360 Rotation Floating Icon Hint -->
+<div class="absolute bottom-3 left-3 bg-surface-container-lowest/80 backdrop-blur-sm px-2.5 py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1 border border-outline-variant/30">
+<span class="material-symbols-outlined text-[14px]" data-icon="360">360</span>
+<span class="">각도 조절 가능</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/80 backdrop-blur-sm px-2.5 py-1 rounded-full text-label-sm font-label-sm text-secondary font-bold flex items-center gap-1 border border-outline-variant/30">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span id="live-color-name" class="">내추럴 탠 (Natural Tan)</span>
+</div>
+</div>
+<!-- Quick Spec Preview Bar -->
+<div class="mt-4 grid grid-cols-3 gap-2 text-center text-body-sm bg-paper-surface p-3 rounded-lg border border-outline-variant/20">
+<div>
+<p class="text-outline text-label-sm font-label-sm">선택 소재</p>
+<p class="font-bold text-on-surface" id="summary-leather">베지터블 레더</p>
+</div>
+<div>
+<p class="text-outline text-label-sm font-label-sm">부자재 마감</p>
+<p class="font-bold text-on-surface" id="summary-hardware">황동 브라스 (Brass)</p>
+</div>
+<div>
+<p class="text-outline text-label-sm font-label-sm">각인 문구</p>
+<p class="font-bold text-primary font-serif" id="summary-text">ATELIER. C</p>
+</div>
+</div>
+</div>
+<!-- Material Authenticity Callout -->
+<div class="bg-sage-soft/50 rounded-xl p-4 border border-secondary/20 flex items-start gap-3 text-body-sm text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-secondary mt-0.5" data-icon="eco">eco</span>
+<div>
+<p class="font-bold font-label-md">친환경 베지터블 태닝 보증</p>
+<p class="text-on-secondary-container text-body-sm">시간이 지날수록 사용자의 손길과 라이프스타일에 맞추어 짙고 부드럽게 에이징(Patina)됩니다.</p>
+</div>
+</div>
+</div>
+<!-- RIGHT: Step-by-Step Customization Cascade (Col 6-12) -->
+<div class="lg:col-span-7 space-y-6">
+<!-- STEP TRACKER PILL -->
+<div class="bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/30 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary text-label-sm font-bold flex items-center justify-center">1</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">소재 컬러</span>
+</div>
+<div class="w-8 h-px bg-outline-variant/50"></div>
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-paper-surface text-on-surface-variant text-label-sm font-bold flex items-center justify-center">2</span>
+<span class="font-label-md text-label-md text-on-surface-variant">부자재/마감</span>
+</div>
+<div class="w-8 h-px bg-outline-variant/50"></div>
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-paper-surface text-on-surface-variant text-label-sm font-bold flex items-center justify-center">3</span>
+<span class="font-label-md text-label-md text-on-surface-variant">이니셜 각인</span>
+</div>
+<div class="w-8 h-px bg-outline-variant/50"></div>
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-paper-surface text-on-surface-variant text-label-sm font-bold flex items-center justify-center">4</span>
+<span class="font-label-md text-label-md text-on-surface-variant">도구 세트</span>
+</div>
+</div>
+<!-- STEP 1: 베이스 소재 및 메인 컬러 선택 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<span class="text-primary font-label-md text-label-md font-bold">Step 1.</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">베이스 가죽 및 메인 컬러 선택</h3>
+</div>
+<span class="text-label-sm font-label-sm bg-terracotta-soft text-primary px-2.5 py-1 rounded-full font-semibold">필수 선택</span>
+</div>
+<!-- Color Options Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<!-- Option 1: Natural Tan (Selected) -->
+<button class="p-3.5 rounded-xl border-2 border-primary bg-terracotta-soft text-left transition-all relative flex flex-col justify-between h-32" id="color-tan-btn" onclick="selectColor('tan', '#C17C54', '#8C4D2E', '내추럴 탠 (Natural Tan)')" type="button">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-full shadow-inner border border-black/20" style="background-color: #C17C54;"></span>
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="check_circle" id="badge-tan" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<p class="font-bold text-body-sm text-on-surface">내추럴 탠</p>
+<p class="text-label-sm text-outline font-normal">시간의 멋 태닝</p>
+<p class="text-label-sm font-bold text-primary mt-1">+₩0</p>
+</div>
+</button>
+<!-- Option 2: Burgundy Wine -->
+<button class="p-3.5 rounded-xl border border-outline-variant/40 bg-surface-container-lowest hover:border-outline text-left transition-all relative flex flex-col justify-between h-32" id="color-wine-btn" onclick="selectColor('wine', '#68252B', '#481318', '버건디 와인 (Burgundy Wine)')" type="button">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-full shadow-inner border border-black/20" style="background-color: #68252B;"></span>
+<span class="material-symbols-outlined text-primary text-[18px] hidden" data-icon="check_circle" id="badge-wine">check_circle</span>
+</div>
+<div>
+<p class="font-bold text-body-sm text-on-surface">버건디 와인</p>
+<p class="text-label-sm text-outline font-normal">우아한 클래식</p>
+<p class="text-label-sm font-bold text-on-surface-variant mt-1">+₩2,000</p>
+</div>
+</button>
+<!-- Option 3: Forest Green -->
+<button class="p-3.5 rounded-xl border border-outline-variant/40 bg-surface-container-lowest hover:border-outline text-left transition-all relative flex flex-col justify-between h-32" id="color-green-btn" onclick="selectColor('green', '#2D4436', '#1E3025', '포레스트 그린 (Forest Green)')" type="button">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-full shadow-inner border border-black/20" style="background-color: #2D4436;"></span>
+<span class="material-symbols-outlined text-primary text-[18px] hidden" data-icon="check_circle" id="badge-green">check_circle</span>
+</div>
+<div>
+<p class="font-bold text-body-sm text-on-surface">포레스트 그린</p>
+<p class="text-label-sm text-outline font-normal">차분한 딥 포레스트</p>
+<p class="text-label-sm font-bold text-on-surface-variant mt-1">+₩2,000</p>
+</div>
+</button>
+<!-- Option 4: Etoupe Gray -->
+<button class="p-3.5 rounded-xl border border-outline-variant/40 bg-surface-container-lowest hover:border-outline text-left transition-all relative flex flex-col justify-between h-32" id="color-gray-btn" onclick="selectColor('gray', '#7B746D', '#544E48', '에토프 그레이 (Etoupe Gray)')" type="button">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-full shadow-inner border border-black/20" style="background-color: #7B746D;"></span>
+<span class="material-symbols-outlined text-primary text-[18px] hidden" data-icon="check_circle" id="badge-gray">check_circle</span>
+</div>
+<div>
+<p class="font-bold text-body-sm text-on-surface">에토프 그레이</p>
+<p class="text-label-sm text-outline font-normal">모던 웜 뉴트럴</p>
+<p class="text-label-sm font-bold text-on-surface-variant mt-1">+₩3,000</p>
+</div>
+</button>
+</div>
+</div>
+<!-- STEP 2: 부자재 및 마감 옵션 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<span class="text-primary font-label-md text-label-md font-bold">Step 2.</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">금속 부자재 및 린넨 스티치 옵션</h3>
+</div>
+<span class="text-label-sm font-label-sm bg-terracotta-soft text-primary px-2.5 py-1 rounded-full font-semibold">필수 선택</span>
+</div>
+<!-- Hardware Options -->
+<div>
+<label class="block text-body-sm font-label-md text-on-surface-variant mb-2">금속 스냅 및 리벳 컬러</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<!-- Brass (Selected) -->
+<button class="p-3 rounded-lg border-2 border-primary bg-terracotta-soft text-left flex items-center justify-between" id="hw-brass-btn" onclick="selectHardware('brass', '#F59E0B', '황동 브라스 (Brass)')" type="button">
+<div class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-amber-400 border border-amber-600 shadow-sm"></span>
+<div>
+<p class="font-bold text-body-sm text-on-surface">황동 브라스</p>
+<p class="text-label-sm text-outline">엔틱 골드 톤</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="check" id="hw-brass-check">check</span>
+</button>
+<!-- Silver -->
+<button class="p-3 rounded-lg border border-outline-variant/40 bg-surface-container-lowest hover:border-outline text-left flex items-center justify-between" id="hw-silver-btn" onclick="selectHardware('silver', '#E2E8F0', '매트 실버 (Matte Silver)')" type="button">
+<div class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-slate-300 border border-slate-400 shadow-sm"></span>
+<div>
+<p class="font-bold text-body-sm text-on-surface">매트 실버</p>
+<p class="text-label-sm text-outline">세련된 무광 은장</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px] hidden" data-icon="check" id="hw-silver-check">check</span>
+</button>
+<!-- Black -->
+<button class="p-3 rounded-lg border border-outline-variant/40 bg-surface-container-lowest hover:border-outline text-left flex items-center justify-between" id="hw-black-btn" onclick="selectHardware('black', '#1E293B', '앤틱 블랙 (Antique Black)')" type="button">
+<div class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-stone-800 border border-black shadow-sm"></span>
+<div>
+<p class="font-bold text-body-sm text-on-surface">앤틱 블랙</p>
+<p class="text-label-sm text-outline">매트 차콜 코팅</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px] hidden" data-icon="check" id="hw-black-check">check</span>
+</button>
+</div>
+</div>
+<!-- Edge Finishing Oil Option -->
+<div class="pt-2">
+<label class="block text-body-sm font-label-md text-on-surface-variant mb-2">엣지 단면 마감재 (토코놀 vs 엣지코트)</label>
+<div class="flex gap-4">
+<label class="flex items-center gap-2 cursor-pointer text-body-sm text-on-surface">
+<input checked="" class="text-primary focus:ring-primary border-outline-variant" name="finish" type="radio">
+<span class="">투명 천연 토코놀 마감 (자연스러운 가죽 결 살림)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer text-body-sm text-on-surface">
+<input class="text-primary focus:ring-primary border-outline-variant" name="finish" type="radio">
+<span class="">톤온톤 엣지코트 (+₩1,500)</span>
+</label>
+</div>
+</div>
+</div>
+<!-- STEP 3: 나만의 이니셜 / 문구 각인 서비스 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<span class="text-primary font-label-md text-label-md font-bold">Step 3.</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">나만의 이니셜 / 문구 각인 서비스</h3>
+</div>
+<span class="text-label-sm font-label-sm bg-secondary-container text-on-secondary-fixed-variant px-2.5 py-1 rounded-full font-semibold">무료 프로모션</span>
+</div>
+<div class="space-y-3">
+<div class="flex flex-col sm:flex-row gap-4">
+<!-- Monogram Input Field -->
+<div class="flex-1 relative">
+<label class="block text-body-sm font-label-md text-on-surface-variant mb-1">
+                      각인 문구 입력 (영문 대소문자, 숫자, 마침표 가능)
+                    </label>
+<div class="relative">
+<input class="w-full bg-paper-surface border border-outline-variant/60 rounded-lg px-4 py-3 text-body-md font-bold focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all text-on-surface" id="engrave-input" maxlength="12" oninput="updateEngrave(this.value)" placeholder="예: MIN. SEOUL / 1994" type="text" value="ATELIER. C">
+<span class="absolute right-3 top-3 text-label-sm font-label-sm text-outline" id="char-count">9/12</span>
+</div>
+</div>
+<!-- Engraving Position Selection -->
+<div class="sm:w-56">
+<label class="block text-body-sm font-label-md text-on-surface-variant mb-1">
+                      각인 위치 선택
+                    </label>
+<select class="w-full bg-paper-surface border border-outline-variant/60 rounded-lg px-4 py-3 text-body-sm text-on-surface focus:border-primary focus:ring-primary/20">
+<option selected="">전면 우측 하단 (추천)</option>
+<option>내부 카드 슬롯 중앙</option>
+<option>후면 가죽 중앙</option>
+</select>
+</div>
+</div>
+<!-- Foil Option Chips -->
+<div class="flex items-center gap-3 pt-1">
+<span class="text-label-sm font-label-sm text-outline">각인 방식:</span>
+<button class="px-3 py-1 rounded-full text-label-sm font-bold bg-primary text-on-primary" type="button">불도장 음각 (Blind Emboss)</button>
+<button class="px-3 py-1 rounded-full text-label-sm font-bold bg-paper-surface text-on-surface-variant hover:bg-surface-container" type="button">골드박 (Gold Foil)</button>
+<button class="px-3 py-1 rounded-full text-label-sm font-bold bg-paper-surface text-on-surface-variant hover:bg-surface-container" type="button">실버박 (Silver Foil)</button>
+</div>
+</div>
+</div>
+<!-- STEP 4: 초보자용 추가 도구 세트 옵션 토글 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<span class="text-primary font-label-md text-label-md font-bold">Step 4.</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">초보자용 추가 도구 세트 옵션</h3>
+</div>
+<span class="text-label-sm font-label-sm bg-paper-surface text-on-surface-variant px-2.5 py-1 rounded-full">선택 옵션</span>
+</div>
+<!-- Tool Checklist -->
+<div class="space-y-3">
+<!-- Tool Item 1 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-outline-variant/30 hover:bg-paper-surface/50 cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary border-outline-variant" id="tool-opt-1" onchange="toggleAddon(this, 12000)" type="checkbox">
+<div>
+<p class="font-bold text-body-sm text-on-surface">프로페셔널 가죽공예 전용 펀칭 세트</p>
+<p class="text-label-sm text-outline">4mm 4날/2날 치즐 타공 도구 + 무소음 고무판 + 우레탄 망치</p>
+</div>
+</div>
+<span class="font-bold text-body-sm text-primary">+₩12,000</span>
+</label>
+<!-- Tool Item 2 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-outline-variant/30 hover:bg-paper-surface/50 cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary border-outline-variant" id="tool-opt-2" onchange="toggleAddon(this, 6000)" type="checkbox">
+<div>
+<p class="font-bold text-body-sm text-on-surface">프리미엄 우드 슬리커 &amp; 천연 비즈왁스</p>
+<p class="text-label-sm text-outline">매끄러운 단면 마감과 실 코팅을 위한 필수 천연재</p>
+</div>
+</div>
+<span class="font-bold text-body-sm text-primary">+₩6,000</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+         ORDER ESTIMATE & WORKSHOP INFO BANNER
+         ========================================== -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-12">
+<div class="bg-surface-container-high rounded-2xl p-6 lg:p-8 border border-outline-variant/30 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]" data-icon="local_shipping">local_shipping</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-label-lg font-bold text-on-surface">주문 즉시 맞춤 준비</h4>
+<p class="text-body-sm text-on-surface-variant mt-0.5">커스텀 각인 작업 후 <span class="font-bold text-primary">24시간 내 배송 출고</span>됩니다. (영업일 기준)</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]" data-icon="ondemand_video">ondemand_video</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-label-lg font-bold text-on-surface">평생 소장 4K 영상 가이드</h4>
+<p class="text-body-sm text-on-surface-variant mt-0.5">패키지 내 QR 코드를 통해 스마트폰으로 언제든 보며 만드는 동영상 튜토리얼 제공.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]" data-icon="support_agent">support_agent</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-label-lg font-bold text-on-surface">1:1 공방 장인 피드백</h4>
+<p class="text-body-sm text-on-surface-variant mt-0.5">만들다 막히는 순간 카카오톡 채널로 실시간 사진 전송 및 마스터 상담 지원.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+         PERSISTENT FLOATING ORDER SUMMARY BAR
+         ========================================== -->
+<aside class="sticky bottom-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md border-t border-outline-variant/30 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] py-4">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
+<!-- Order Info Summary Left -->
+<div class="flex items-center gap-4 w-full md:w-auto justify-between md:justify-start">
+<div class="hidden sm:block">
+<span class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider">주문 요약 (Bespoke Edition)</span>
+<div class="flex items-center gap-2">
+<h5 class="font-headline-sm text-label-lg font-bold text-on-surface">클래식 베지터블 레더 카드 포켓 키트</h5>
+<span class="text-label-sm px-2 py-0.5 bg-paper-surface rounded text-on-surface-variant border border-outline-variant/30" id="floating-spec-pill">
+                내추럴 탠 / 황동 / 각인 포함
+              </span>
+</div>
+</div>
+<!-- Total Calculation -->
+<div class="flex items-baseline gap-2 md:pl-6 md:border-l md:border-outline-variant/30">
+<span class="text-body-sm text-on-surface-variant">최종 주문 금액:</span>
+<span class="font-headline-md text-headline-md font-bold text-primary" id="total-price-display">₩42,000</span>
+<span class="text-label-sm text-secondary font-bold">(무료배송)</span>
+</div>
+</div>
+<!-- Action Buttons Cluster -->
+<div class="flex items-center gap-3 w-full md:w-auto">
+<!-- Add to cart -->
+<button class="flex-1 md:flex-none px-5 py-3 rounded-lg border border-outline-variant/50 bg-paper-surface hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 active:scale-[0.98] transition-transform" onclick="openCheckoutDrawer('cart')">
+<span class="material-symbols-outlined text-[18px]" data-icon="shopping_bag">shopping_bag</span>
+<span class="">장바구니 담기</span>
+</button>
+<!-- Direct Purchase -->
+<button class="flex-1 md:flex-none px-6 py-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 active:scale-[0.98] transition-transform shadow-sm" onclick="openCheckoutDrawer('checkout')">
+<span class="">바로 주문결제하기</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="bolt">bolt</span>
+</button>
+</div>
+</div>
+</aside>
+</main>
+<!-- ==========================================
+       SHARED COMPONENT 2: Footer
+       Exact strings, classes, and layout rules from JSON
+       ========================================== -->
+<footer class="bg-surface-container-high dark:bg-inverse-surface border-t border-outline-variant/20 dark:border-outline/20">
+<div class="w-full px-6 lg:px-12 py-12 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<!-- Brand & Copyright -->
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-inverse-on-surface">ATELIER CRAFT</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant dark:text-outline-variant text-center md:text-left">
+          © 2025 ATELIER CRAFT. Slow-living artisanal DIY kits &amp; mindful craft studio. All rights reserved.
+        </p>
+</div>
+<!-- Links Cluster (From JSON) -->
+<div class="flex flex-wrap justify-center items-center gap-4 md:gap-6">
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-surface font-body-sm text-body-sm hover:text-primary transition-colors duration-150" href="#terms">이용약관</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-surface font-body-sm text-body-sm hover:text-primary transition-colors duration-150" href="#privacy">개인정보처리방침</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-surface font-body-sm text-body-sm hover:text-primary transition-colors duration-150" href="#shipping-policy">배송 및 교환/환불 정책</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-surface font-body-sm text-body-sm hover:text-primary transition-colors duration-150" href="#b2b-inquiry">B2B 단체 키트 문의</a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:text-on-surface dark:hover:text-surface font-body-sm text-body-sm hover:text-primary transition-colors duration-150" href="#support-center">고객지원 센터</a>
+</div>
+</div>
+</footer>
+<!-- ==========================================
+       LIGHTWEIGHT INTERACTION MICRO-SCRIPTS
+       ========================================== -->
+<script>
+    // State Tracker
+    const state = {
+      basePrice: 42000,
+      colorExtra: 0,
+      colorName: "내추럴 탠",
+      hardwareName: "황동 브라스",
+      engraving: "ATELIER. C",
+      addonTools: 0
+    };
+
+    function recalculateTotal() {
+      const total = state.basePrice + state.colorExtra + state.addonTools;
+      document.getElementById('total-price-display').innerText = `₩${total.toLocaleString()}`;
+      
+      const pill = document.getElementById('floating-spec-pill');
+      pill.innerText = `${state.colorName} / ${state.hardwareName} / 각인: ${state.engraving || '미입력'}`;
+    }
+
+    // 1. Color Selector
+    function selectColor(colorKey, bgHex, borderHex, displayName) {
+      const canvas = document.getElementById('product-canvas');
+      canvas.style.backgroundColor = bgHex;
+      canvas.style.borderColor = borderHex;
+
+      document.getElementById('live-color-name').innerText = displayName;
+      document.getElementById('summary-leather').innerText = displayName.split(' ')[0];
+
+      state.colorName = displayName.split(' ')[0];
+
+      // Update color extra
+      if (colorKey === 'wine' || colorKey === 'green') state.colorExtra = 2000;
+      else if (colorKey === 'gray') state.colorExtra = 3000;
+      else state.colorExtra = 0;
+
+      // Reset styling
+      const buttons = ['tan', 'wine', 'green', 'gray'];
+      buttons.forEach(k => {
+        const btn = document.getElementById(`color-${k}-btn`);
+        const badge = document.getElementById(`badge-${k}`);
+        if (k === colorKey) {
+          btn.className = "p-3.5 rounded-xl border-2 border-primary bg-terracotta-soft text-left transition-all relative flex flex-col justify-between h-32";
+          badge.classList.remove('hidden');
+        } else {
+          btn.className = "p-3.5 rounded-xl border border-outline-variant/40 bg-surface-container-lowest hover:border-outline text-left transition-all relative flex flex-col justify-between h-32";
+          badge.classList.add('hidden');
+        }
+      });
+
+      recalculateTotal();
+    }
+
+    // 2. Hardware Selector
+    function selectHardware(hwKey, hexColor, displayName) {
+      const snap = document.getElementById('preview-hardware-snap');
+      snap.style.backgroundColor = hexColor;
+
+      state.hardwareName = displayName.split(' ')[0];
+      document.getElementById('summary-hardware').innerText = displayName;
+
+      const keys = ['brass', 'silver', 'black'];
+      keys.forEach(k => {
+        const btn = document.getElementById(`hw-${k}-btn`);
+        const check = document.getElementById(`hw-${k}-check`);
+        if (k === hwKey) {
+          btn.className = "p-3 rounded-lg border-2 border-primary bg-terracotta-soft text-left flex items-center justify-between";
+          check.classList.remove('hidden');
+        } else {
+          btn.className = "p-3 rounded-lg border border-outline-variant/40 bg-surface-container-lowest hover:border-outline text-left flex items-center justify-between";
+          check.classList.add('hidden');
+        }
+      });
+
+      recalculateTotal();
+    }
+
+    // 3. Monogram Engraving Live Input
+    function updateEngrave(text) {
+      const sanitized = text.toUpperCase();
+      document.getElementById('preview-engrave-text').innerText = sanitized || "YOUR TEXT";
+      document.getElementById('summary-text').innerText = sanitized || "없음";
+      document.getElementById('char-count').innerText = `${sanitized.length}/12`;
+      state.engraving = sanitized;
+      recalculateTotal();
+    }
+
+    // 4. Addon Tools Toggle
+    function toggleAddon(checkbox, deltaPrice) {
+      if (checkbox.checked) {
+        state.addonTools += deltaPrice;
+      } else {
+        state.addonTools -= deltaPrice;
+      }
+      recalculateTotal();
+    }
+
+    // 5. Angle Preview Switcher (Visual simulation)
+    function switchAngle(angle) {
+      const canvas = document.getElementById('product-canvas');
+      const buttons = ['front', 'back', 'open'];
+      
+      buttons.forEach(a => {
+        const b = document.getElementById(`angle-${a}`);
+        if (a === angle) {
+          b.className = "px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-bold shadow-xs";
+        } else {
+          b.className = "px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface";
+        }
+      });
+
+      if (angle === 'back') {
+        canvas.style.transform = "rotateY(180deg) scale(0.95)";
+      } else if (angle === 'open') {
+        canvas.style.transform = "rotateX(20deg) scale(1.02)";
+      } else {
+        canvas.style.transform = "none";
+      }
+    }
+
+    function handleAddToCart() {
+      alert("✨ 커스텀 옵션이 장바구니에 성공적으로 담겼습니다! 상단 장바구니에서 확인하세요.");
+    }
+
+    function handleDirectCheckout() {
+      alert("💳 네이버페이 / 카드 즉시 결제 주문서 작성 페이지로 연결됩니다.");
+    }
+  </script>
+
+
+<!-- Cart & Checkout Slide-Over Drawer Modal -->
+<div class="fixed inset-0 z-50 overflow-hidden" id="checkout-drawer-modal" role="dialog" aria-modal="true">
+  <!-- Dim Backdrop with blur -->
+  <div class="fixed inset-0 bg-black/40 backdrop-blur-sm transition-opacity duration-300" id="checkout-backdrop" onclick="closeCheckoutDrawer()"></div>
+
+  <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+    <div class="w-screen max-w-xl bg-surface-container-lowest shadow-2xl flex flex-col justify-between border-l border-outline-variant/30 transform transition-transform duration-300 ease-in-out">
+      
+      <!-- Modal Header -->
+      <div class="p-6 border-b border-outline-variant/30 bg-surface-container-low flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+            <span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+          </div>
+          <div>
+            <h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">장바구니 &amp; 주문 결제</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">공방 맞춤 제작 Bespoke Kit 주문서</p>
+          </div>
+        </div>
+        <button class="w-9 h-9 rounded-full bg-paper-surface hover:bg-surface-container border border-outline-variant/30 text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors" onclick="closeCheckoutDrawer()" title="닫기">
+          <span class="material-symbols-outlined text-[20px]" data-icon="close">close</span>
+        </button>
+      </div>
+
+      <!-- Order Steps Indicator -->
+      <div class="px-6 py-3.5 bg-paper-surface border-b border-outline-variant/30 flex items-center justify-between text-body-sm">
+        <div class="flex items-center gap-2 text-primary font-bold">
+          <span class="w-6 h-6 rounded-full bg-primary text-on-primary text-label-sm font-bold flex items-center justify-center">1</span>
+          <span class="font-label-md text-label-md">옵션 확인</span>
+        </div>
+        <div class="w-6 h-px bg-outline-variant/60"></div>
+        <div class="flex items-center gap-2 text-on-surface-variant font-medium">
+          <span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant text-label-sm font-bold flex items-center justify-center">2</span>
+          <span class="font-label-md text-label-md">배송지 입력</span>
+        </div>
+        <div class="w-6 h-px bg-outline-variant/60"></div>
+        <div class="flex items-center gap-2 text-on-surface-variant font-medium">
+          <span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant text-label-sm font-bold flex items-center justify-center">3</span>
+          <span class="font-label-md text-label-md">최종 결제</span>
+        </div>
+      </div>
+
+      <!-- Scrollable Drawer Body -->
+      <div class="flex-1 overflow-y-auto p-6 space-y-6 scrollbar-none">
+        
+        <!-- 1. Cart Item Card -->
+        <div class="rounded-2xl border border-outline-variant/40 bg-surface-container-low p-4 space-y-4">
+          <div class="flex items-start justify-between gap-4">
+            <div class="flex gap-3.5">
+              <div class="w-20 h-20 rounded-xl bg-paper-surface border border-outline-variant/30 overflow-hidden shrink-0 flex items-center justify-center">
+                <div class="w-16 h-12 rounded bg-[#C17C54] border border-[#8C4D2E] shadow-sm flex flex-col justify-between p-1.5">
+                  <div class="w-full border-t border-dashed border-tertiary-fixed-dim/80"></div>
+                  <span class="text-[8px] font-serif italic text-on-primary-fixed self-end font-bold">ATELIER. C</span>
+                  <div class="w-full border-b border-dashed border-tertiary-fixed-dim/80"></div>
+                </div>
+              </div>
+              <div class="space-y-1">
+                <span class="px-2 py-0.5 rounded bg-terracotta-soft text-primary font-bold text-[11px]">커스텀 완료 키트</span>
+                <h4 class="font-headline-sm text-body-md font-bold text-on-surface leading-snug">클래식 베지터블 레더 카드 포켓 키트</h4>
+                <p class="font-label-md text-label-md font-bold text-primary">₩42,000</p>
+              </div>
+            </div>
+            <button class="text-outline hover:text-error transition-colors p-1" title="아이템 삭제">
+              <span class="material-symbols-outlined text-[18px]" data-icon="delete">delete</span>
+            </button>
+          </div>
+
+          <!-- Applied Custom Options List -->
+          <div class="p-3 rounded-xl bg-surface-container-lowest border border-outline-variant/30 space-y-2 text-body-sm">
+            <div class="flex items-center justify-between">
+              <span class="text-on-surface-variant text-label-sm font-label-sm">베이스 가죽 / 스티치</span>
+              <span class="font-medium text-on-surface text-label-sm">내추럴 탠 (Natural Tan) (+₩0)</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-on-surface-variant text-label-sm font-label-sm">금속 부자재</span>
+              <span class="font-medium text-on-surface text-label-sm">황동 브라스 (엔틱 골드 톤)</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-on-surface-variant text-label-sm font-label-sm">영문 이니셜 각인</span>
+              <span class="font-serif font-bold text-primary text-label-sm">ATELIER. C (불도장 음각 / 전면 우측 하단)</span>
+            </div>
+            <div class="flex items-center justify-between pt-1 border-t border-outline-variant/20">
+              <span class="text-on-surface-variant text-label-sm font-label-sm">추가 도구 세트</span>
+              <span class="font-medium text-on-surface text-label-sm">프로 펀칭 세트 (+₩12,000)</span>
+            </div>
+          </div>
+
+          <!-- Quantity Counter and Subtotal -->
+          <div class="flex items-center justify-between pt-2 border-t border-outline-variant/20">
+            <div class="flex items-center border border-outline-variant/40 rounded-lg bg-surface-container-lowest overflow-hidden">
+              <button class="px-2.5 py-1 text-on-surface hover:bg-paper-surface transition-colors font-bold" onclick="changeModalQty(-1)">-</button>
+              <span class="px-3 py-1 text-body-sm font-bold text-on-surface border-x border-outline-variant/30" id="modal-item-qty">1</span>
+              <button class="px-2.5 py-1 text-on-surface hover:bg-paper-surface transition-colors font-bold" onclick="changeModalQty(1)">+</button>
+            </div>
+            <div class="text-right">
+              <span class="text-body-sm text-on-surface-variant">소계: </span>
+              <span class="font-headline-sm text-label-lg font-bold text-on-surface" id="modal-item-subtotal">₩54,000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Shipping Address Input Form -->
+        <div class="rounded-2xl border border-outline-variant/40 bg-surface-container-lowest p-5 space-y-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary text-[20px]" data-icon="local_shipping">local_shipping</span>
+              <h4 class="font-headline-sm text-body-md font-bold text-on-surface">배송지 정보</h4>
+            </div>
+            <span class="text-label-sm text-secondary font-bold bg-secondary-container/60 px-2 py-0.5 rounded">안심 포장 출고</span>
+          </div>
+          
+          <div class="space-y-3">
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">수령인 성명</label>
+                <input type="text" class="w-full bg-paper-surface border border-outline-variant/60 rounded-lg px-3 py-2 text-body-sm focus:border-primary focus:ring-1 focus:ring-primary text-on-surface" placeholder="홍길동" value="김아틀리에">
+              </div>
+              <div>
+                <label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">연락처</label>
+                <input type="tel" class="w-full bg-paper-surface border border-outline-variant/60 rounded-lg px-3 py-2 text-body-sm focus:border-primary focus:ring-1 focus:ring-primary text-on-surface" placeholder="010-0000-0000" value="010-3849-2041">
+              </div>
+            </div>
+            <div>
+              <label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">기본 주소</label>
+              <div class="flex gap-2 mb-2">
+                <input type="text" class="flex-1 bg-paper-surface border border-outline-variant/60 rounded-lg px-3 py-2 text-body-sm text-on-surface" readonly="" value="(04043) 서울시 마포구 독막로 12길 18">
+                <button class="px-3 py-2 bg-paper-surface hover:bg-surface-container border border-outline-variant/40 rounded-lg text-body-sm font-label-md text-on-surface whitespace-nowrap">주소 변경</button>
+              </div>
+              <input type="text" class="w-full bg-paper-surface border border-outline-variant/60 rounded-lg px-3 py-2 text-body-sm focus:border-primary focus:ring-1 focus:ring-primary text-on-surface" placeholder="상세 주소를 입력해주세요" value="3층 공방 아틀리에 스튜디오">
+            </div>
+            <div>
+              <label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">배송 요청사항</label>
+              <select class="w-full bg-paper-surface border border-outline-variant/60 rounded-lg px-3 py-2 text-body-sm text-on-surface focus:border-primary focus:ring-primary/20">
+                <option>문 앞에 놓아주세요 (부재 시 연락)</option>
+                <option>배송 전 미리 연락 바랍니다</option>
+                <option>경비실에 맡겨주세요</option>
+                <option>직접 수령하겠습니다</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Payment Method Selection -->
+        <div class="rounded-2xl border border-outline-variant/40 bg-surface-container-lowest p-5 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]" data-icon="credit_card">credit_card</span>
+            <h4 class="font-headline-sm text-body-md font-bold text-on-surface">간편 결제 수단 선택</h4>
+          </div>
+          <div class="grid grid-cols-3 gap-2">
+            <button class="p-3 rounded-xl border-2 border-primary bg-terracotta-soft text-center flex flex-col items-center justify-center gap-1.5 transition-all">
+              <span class="px-2 py-0.5 rounded bg-[#03C75A] text-white font-bold text-[11px]">N Pay</span>
+              <span class="text-label-sm font-bold text-on-surface">네이버페이</span>
+            </button>
+            <button class="p-3 rounded-xl border border-outline-variant/40 bg-surface-container-lowest hover:border-outline text-center flex flex-col items-center justify-center gap-1.5 transition-all">
+              <span class="px-2 py-0.5 rounded bg-[#FEE500] text-[#191919] font-bold text-[11px]">kakao</span>
+              <span class="text-label-sm font-bold text-on-surface">카카오페이</span>
+            </button>
+            <button class="p-3 rounded-xl border border-outline-variant/40 bg-surface-container-lowest hover:border-outline text-center flex flex-col items-center justify-center gap-1.5 transition-all">
+              <span class="px-2 py-0.5 rounded bg-[#0064FF] text-white font-bold text-[11px]">toss</span>
+              <span class="text-label-sm font-bold text-on-surface">토스페이</span>
+            </button>
+          </div>
+          <div class="grid grid-cols-2 gap-2 pt-1">
+            <button class="p-2.5 rounded-lg border border-outline-variant/40 hover:bg-paper-surface text-center text-label-sm font-medium text-on-surface flex items-center justify-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px]" data-icon="credit_card">credit_card</span>
+              <span class="">신용 / 체크카드</span>
+            </button>
+            <button class="p-2.5 rounded-lg border border-outline-variant/40 hover:bg-paper-surface text-center text-label-sm font-medium text-on-surface flex items-center justify-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px]" data-icon="account_balance">account_balance</span>
+              <span class="">무통장 입금 (에스크로)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. Price Calculation Breakdown (Receipt) -->
+        <div class="rounded-2xl border border-outline-variant/40 bg-surface-container-low p-5 space-y-2.5">
+          <h4 class="font-headline-sm text-body-sm font-bold text-on-surface mb-2">최종 결제 금액 명세</h4>
+          <div class="flex justify-between text-body-sm text-on-surface-variant">
+            <span class="">키트 상품 주문 금액</span>
+            <span class="font-medium text-on-surface">₩54,000</span>
+          </div>
+          <div class="flex justify-between text-body-sm text-on-surface-variant">
+            <span class="">기본 배송비</span>
+            <span class="font-bold text-secondary">무료배송 (₩0)</span>
+          </div>
+          <div class="flex justify-between text-body-sm text-primary">
+            <span class="">첫 가입 웰컴 감사 할인쿠폰</span>
+            <span class="font-bold">-₩3,000</span>
+          </div>
+          <div class="pt-3 mt-1 border-t border-outline-variant/30 flex justify-between items-baseline">
+            <span class="font-label-lg text-label-lg font-bold text-on-surface">총 결제 예정 금액</span>
+            <div class="text-right">
+              <span class="font-headline-md text-headline-md font-bold text-primary" id="modal-final-total">₩51,000</span>
+              <p class="text-[11px] text-outline">부가세 및 무료 배송 혜택 포함</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Action Footer Buttons -->
+      <div class="p-6 border-t border-outline-variant/30 bg-surface-container-lowest space-y-3">
+        <button class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg py-4 rounded-xl flex items-center justify-center gap-2 active:scale-[0.98] transition-all shadow-md" onclick="handleProceedPayment()">
+          <span class="material-symbols-outlined text-[20px]" data-icon="lock">lock</span>
+          <span id="modal-pay-btn-label" class="">₩51,000 간편 결제하기</span>
+        </button>
+        <button class="w-full py-2.5 rounded-xl border border-outline-variant/40 text-on-surface-variant hover:text-on-surface hover:bg-paper-surface font-label-md text-label-md transition-colors text-center" onclick="closeCheckoutDrawer()">
+          쇼핑 계속하기 (닫기)
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  // Drawer Modal State and Handlers
+  let modalQuantity = 1;
+  const baseKitPrice = 42000;
+  const addonToolPrice = 12000;
+  const couponDiscount = 3000;
+
+  function openCheckoutDrawer(targetTab) {
+    const modal = document.getElementById('checkout-drawer-modal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeCheckoutDrawer() {
+    const modal = document.getElementById('checkout-drawer-modal');
+    if (modal) {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function changeModalQty(delta) {
+    modalQuantity = Math.max(1, modalQuantity + delta);
+    document.getElementById('modal-item-qty').innerText = modalQuantity;
+    const subtotal = (baseKitPrice + addonToolPrice) * modalQuantity;
+    const finalTotal = subtotal - couponDiscount;
+    document.getElementById('modal-item-subtotal').innerText = '₩' + subtotal.toLocaleString();
+    document.getElementById('modal-final-total').innerText = '₩' + finalTotal.toLocaleString();
+    document.getElementById('modal-pay-btn-label').innerText = '₩' + finalTotal.toLocaleString() + ' 간편 결제하기';
+  }
+
+  function handleProceedPayment() {
+    alert('✨ 네이버페이 / 카카오페이 안전 결제 모듈이 실행됩니다.');
+  }
+</script></body></html>
